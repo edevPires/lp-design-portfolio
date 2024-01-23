@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.gradient-sidebar {
+    background: linear-gradient(145deg, #17efd8, #d722c7, #d9b012);
+    background-size: 100%;
+    background-position: center;
+}
