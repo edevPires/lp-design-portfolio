@@ -31,11 +31,11 @@ const moveHeaderBar = (elementSelector) => {
 const toggleSidebar = (sidebarSelector) => {
     var sidebar = $(sidebarSelector)
 
-    if (sidebar.hasClass('-left-[770px]')) {
-        sidebar.removeClass('-left-[770px]')
+    if (sidebar.hasClass('-left-[800px]')) {
+        sidebar.removeClass('-left-[800px]')
         sidebar.addClass('-left-[0px]')
     } else {
         sidebar.removeClass('-left-[0px]')
-        sidebar.addClass('-left-[770px]')
+        sidebar.addClass('-left-[800px]')
     }
 }
