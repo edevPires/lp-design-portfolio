@@ -3,24 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="static/fonts/Bahnschrift/stylesheet.css" />
+        <link
+            rel="stylesheet"
+            href="src/static/fonts/Bahnschrift/stylesheet.css"
+        />
         <link rel="stylesheet" href="output.css" />
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <title>LP</title>
     </head>
-    <body class="bg-red-300">
+    <body class="bg-main">
         <!-- Header Section -->
         <header
-            class="flex h-24 items-center justify-center font-bahnschrift text-xl sm:bg-main sm:shadow-lg xl:text-2xl"
+            class="flex h-24 items-center justify-center font-bahnschrift text-xl sm:bg-main sm:shadow-lg xl:text-2xl 2xl:h-32 2xl:text-3xl"
         >
             <!-- Navbar Section -->
             <nav
-                class="relative flex h-full w-full max-w-screen-2xl items-center justify-between md:w-4/5"
+                class="relative flex h-full w-full max-w-[1920px] items-center justify-between md:w-4/5"
             >
                 <!-- Navigator bar section -->
                 <div
                     id="bar"
-                    class="ease absolute left-0 z-10 m-5 h-10 w-[100px] rounded-full bg-font opacity-0 transition-all duration-500"
+                    class="ease absolute left-0 z-10 m-5 h-12 w-[100px] rounded-full bg-font opacity-0 transition-all duration-500 2xl:h-16"
                 ></div>
                 <!-- End navigator bar section -->
 
@@ -28,7 +31,7 @@
                 <ul class="flex-grow-1 z-20 flex h-full flex-shrink-0">
                     <a href="#" class="flex h-full items-center justify-center">
                         <img
-                            src="static/imgs/logo/logo.png"
+                            src="src/static/imgs/logo/logo.png"
                             alt="logo"
                             class="m-5 h-12 w-auto xl:h-14 2xl:h-20"
                         />
@@ -38,7 +41,7 @@
 
                 <!-- Header links -->
                 <ul
-                    class="hidden h-full shrink flex-grow justify-evenly text-nowrap sm:flex"
+                    class="hidden h-full shrink flex-grow justify-around text-nowrap sm:flex"
                 >
                     <a
                         href="#"
@@ -138,7 +141,7 @@
             </nav>
         </div>
         <!-- End sidebar section -->
-        <script src="./static/js/utils/headerBarUtils.js"></script>
-        <script src="./static/js/components/head.js"></script>
+        <script src="./src/static/js/utils/headerBarUtils.js"></script>
+        <script src="./src/static/js/components/head.js"></script>
     </body>
 </html>

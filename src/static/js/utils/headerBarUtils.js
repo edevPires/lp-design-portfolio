@@ -13,8 +13,8 @@ const moveHeaderBar = (elementSelector) => {
         element.removeClass('text-font')
         element.addClass('text-main')
 
-        bar.css('left', elementPosition - 15 + 'px')
-        bar.css('width', elementWidth + 30 + 'px')
+        bar.css('left', elementPosition - 25 + 'px')
+        bar.css('width', elementWidth + 50 + 'px')
         bar.css('opacity', 1)
 
         lastElement = elementSelector
