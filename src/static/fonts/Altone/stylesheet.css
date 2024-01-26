@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('AltoneTrial-BoldOblique.eot');
+    src: url('AltoneTrial-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('AltoneTrial-BoldOblique.woff2') format('woff2'),
+        url('AltoneTrial-BoldOblique.woff') format('woff'),
+        url('AltoneTrial-BoldOblique.ttf') format('truetype'),
+        url('AltoneTrial-BoldOblique.svg#AltoneTrial-BoldOblique') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Altone Trial';
+    src: url('AltoneTrial-Bold.eot');
+    src: url('AltoneTrial-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AltoneTrial-Bold.woff2') format('woff2'),
+        url('AltoneTrial-Bold.woff') format('woff'),
+        url('AltoneTrial-Bold.ttf') format('truetype'),
+        url('AltoneTrial-Bold.svg#AltoneTrial-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

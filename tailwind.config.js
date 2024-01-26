@@ -9,6 +9,7 @@ module.exports = {
             },
             fontFamily: {
                 bahnschrift: ['Bahnschrift', 'sans-serif'],
+                altone: ['Altone Trial', 'sans-serif'],
             },
         },
     },

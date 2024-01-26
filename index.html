@@ -7,14 +7,19 @@
             rel="stylesheet"
             href="src/static/fonts/Bahnschrift/stylesheet.css"
         />
+        <link rel="stylesheet" href="src/static/fonts/Altone/stylesheet.css" />
         <link rel="stylesheet" href="output.css" />
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/f2caee6960.js"
+            crossorigin="anonymous"
+        ></script>
         <title>LP</title>
     </head>
     <body class="bg-main">
         <!-- Header Section -->
         <header
-            class="flex h-24 items-center justify-center font-bahnschrift text-xl sm:bg-main sm:shadow-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:h-32 2xl:text-3xl"
+            class="fixed z-40 flex h-24 w-full items-center justify-center font-bahnschrift text-xl sm:bg-main sm:shadow-lg md:text-2xl lg:text-2xl xl:text-2xl 2xl:h-32 2xl:text-3xl"
         >
             <!-- Navbar Section -->
             <nav
@@ -23,13 +28,16 @@
                 <!-- Navigator bar section -->
                 <div
                     id="bar"
-                    class="ease absolute left-0 z-10 m-5 h-12 w-[100px] rounded-full bg-font opacity-0 transition-all duration-500 2xl:h-16"
+                    class="ease sm:opacity-1 absolute left-0 z-10 m-5 h-12 w-[100px] rounded-full bg-font opacity-0 transition-all duration-500 2xl:h-16"
                 ></div>
                 <!-- End navigator bar section -->
 
                 <!-- Header logo section -->
-                <ul class="flex-grow-1 z-20 flex h-full flex-shrink-0">
-                    <a href="#" class="flex h-full items-center justify-center">
+                <ul class="flex-grow-1 z-20 h-full flex-shrink-0 sm:flex">
+                    <a
+                        href="#"
+                        class="hidden h-full items-center justify-center sm:flex"
+                    >
                         <img
                             src="src/static/imgs/logo/logo.png"
                             alt="logo"
@@ -132,7 +140,7 @@
                         class="flex w-full items-center justify-center text-center text-main"
                     >
                         <p
-                            class="hover:text- gradient-sidebar mx-5 w-full rounded-full py-5 transition-all duration-300 hover:cursor-pointer hover:text-font"
+                            class="gradient-sidebar mx-5 w-full animate-pulse rounded-full py-5 drop-shadow-md transition-all duration-300 hover:cursor-pointer hover:text-font"
                         >
                             criatividade
                         </p>
@@ -141,6 +149,58 @@
             </nav>
         </div>
         <!-- End sidebar section -->
+
+        <!-- Body section -->
+        <main class="h-fit pt-24 sm:h-screen">
+            <div class="relative flex h-full w-full flex-col text-font">
+                <div class="">
+                    <div class="flex h-full justify-center py-5">
+                        <h1 class="font-altone flex items-center text-7xl">
+                            Olá,
+                        </h1>
+                        <h2
+                            class="ml-4 flex items-center font-bahnschrift text-2xl leading-6"
+                        >
+                            bem-vindo ao<br />meu site!!
+                        </h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-center">
+                        <img
+                            src="src/static/imgs/eu/lp.png"
+                            alt="LP"
+                            class="h-[300px] w-auto"
+                        />
+                    </div>
+                </div>
+                <div class="flex flex-wrap justify-center py-5">
+                    <h2
+                        class="mb-2 flex w-full items-center justify-center text-center font-bahnschrift text-3xl"
+                    >
+                        Eu sou a
+                    </h2>
+                    <h1 class="font-altone flex items-center text-6xl">
+                        Lara Pires
+                    </h1>
+                </div>
+                <div class="flex w-full items-center justify-center pt-5">
+                    <div
+                        class="gradient-sidebar w-fit rounded-full bg-slate-50 px-6 py-3 font-bahnschrift text-3xl text-main"
+                    >
+                        Diretora de Arte
+                    </div>
+                </div>
+                <div class="my-8">
+                    <div class="flex flex-wrap items-center justify-center">
+                        <h1 class="w-full text-center font-bahnschrift text-xl">
+                            trabalhos
+                        </h1>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src="./src/static/js/utils/headerBarUtils.js"></script>
         <script src="./src/static/js/components/head.js"></script>
     </body>
